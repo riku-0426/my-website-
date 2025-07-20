@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trivia Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>My Personal Website</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="portfolio.html">PORTFOLIO</a>
+    <a href="trivia.html">TRIVIA</a>
+  </nav>
+
+  <div class="container">
+    <aside class="left">
+      <ul>
+        <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+        <li><a href="https://chat.openai.com/" target="_blank">ChatGPT</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <h2>Trivia Quiz: About Me</h2>
+
+      <div class="quiz">
+        <p><strong>1. Where do I study?</strong></p>
+        <button onclick="checkAnswer(1, this, true)">Ritsumeikan University</button>
+        <button onclick="checkAnswer(1, this, false)">Tokyo University</button>
+        <button onclick="checkAnswer(1, this, false)">Kyoto University</button>
+        <p id="result1"></p>
+      </div>
+
+      <div class="quiz">
+        <p><strong>2. What is my favorite programming language?</strong></p>
+        <button onclick="checkAnswer(2, this, true)">Python</button>
+        <button onclick="checkAnswer(2, this, false)">C++</button>
+        <button onclick="checkAnswer(2, this, false)">Java</button>
+        <p id="result2"></p>
+      </div>
+
+      <div class="quiz">
+        <p><strong>3. What do I enjoy in my free time?</strong></p>
+        <button onclick="checkAnswer(3, this, true)">Cooking and gaming</button>
+        <button onclick="checkAnswer(3, this, false)">Fishing and hiking</button>
+        <button onclick="checkAnswer(3, this, false)">Reading newspapers</button>
+        <p id="result3"></p>
+      </div>
+
+      <div class="quiz">
+        <p><strong>4. What language do I study in university?</strong></p>
+        <button onclick="checkAnswer(4, this, true)">English</button>
+        <button onclick="checkAnswer(4, this, false)">Japanese</button>
+        <button onclick="checkAnswer(4, this, false)">Chinese</button>
+        <p id="result4"></p>
+      </div>
+    </main>
+
+    <aside class="right">
+      <h3>Contact Me</h3>
+      <form>
+        <input type="text" placeholder="Your Name"><br>
+        <input type="email" placeholder="Your Email"><br>
+        <textarea placeholder="Your Message"></textarea><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+      </form>
+    </aside>
+  </div>
+
+  <footer>
+    Created in July 2025 | <a href="https://github.com/riku-0426" target="_blank">My GitHub</a>
+  </footer>
+</body>
+</html>
